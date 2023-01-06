@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .signup-container{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 60%;
+            width: 450px;
+            background-color: white;
+            padding: 5% 5%;
+        }
+        .signup-parent{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(1, 196, 255);
+        }
+        input{
+            padding: 5px;
+            font-size: 17px;
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(1, 196, 255);
+            color: white;
+            border: 2px solid rgb(1, 196, 255);
+            font-weight: bold;
+            font-size: 17px;
+            transition: all 0.3s;
+        }
+        button:hover{
+            background-color: white;
+            color: rgb(1, 196, 255);
+            cursor: pointer;
+        }
+        a{
+            color: rgb(1, 196, 255);
+            text-decoration: none;
+        }
+        a:hover{
+           text-decoration: underline;
+        }
+        p{
+            text-align: justify;
+        }
+        .top-heading>h1{
+            color: white;
+            padding-bottom: 50px;
+            font-size: 50px;
+           
+        }
+        @media screen and (max-width:506px) {
+            .signup-container{
+                width: 90%;
+                padding: 5% 2%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-parent">
+        <div class="top-heading">
+            <h1>SIGN UP</h1>
+        </div>
+        <div class="signup-container">
+            <input type="text" id="fname" placeholder="fname">
+            <input type="text" id="lname" placeholder="last name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="btn">Sign Up</button>
+            <p>Or if you have account on this device then <a href="./pages/login.html"> Login here</a></p>
+            
+        </div>
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
